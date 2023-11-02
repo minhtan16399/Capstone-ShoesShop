@@ -1,0 +1,19 @@
+$color-back: #000000;
+$color-purple: #9C27B0;
+$color-orange: #F8B653;
+$color-white: #F6F6F6;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.header {
+    .container-fluid {
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+    }
+}

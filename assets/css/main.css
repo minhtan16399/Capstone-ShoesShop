@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header .container-fluid a {
+  text-decoration: none;
+  color: #F6F6F6;
+}/*# sourceMappingURL=main.css.map */
