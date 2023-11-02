@@ -14,8 +14,32 @@ a {
   color: #FFFFFF;
 }
 
-.navbar .container-fluid .collapse a {
+.navbar .container-fluid .collapse ul li {
+  padding: 0.45rem 0.8rem;
+}
+.navbar .container-fluid .collapse ul li a {
+  padding: 0;
+  padding-bottom: 0.3rem;
   font-weight: 500;
+  position: relative;
+}
+.navbar .container-fluid .collapse ul li a:hover {
+  color: #000000;
+  transition: color 0.5s;
+}
+.navbar .container-fluid .collapse ul li a::after {
+  content: "";
+  width: 0;
+  height: 0.1rem;
+  background-color: #000000;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  transition: width 0.5s;
+}
+.navbar .container-fluid .collapse ul li a:hover::after {
+  width: 100%;
+  transition: width 0.5s;
 }
 
 .carousel {
@@ -48,32 +72,44 @@ a {
   font-size: 2rem;
 }
 
-.footer .container .top_footer, .footer .container .bot_footer {
+.footer .top_footer .container,
+.footer .bot_footer .container {
   display: flex;
   padding: 2rem 0;
 }
-.footer .container .top_footer .footer-content, .footer .container .bot_footer .footer-content {
+.footer .top_footer .container .footer-content,
+.footer .bot_footer .container .footer-content {
   width: 33%;
   padding: 0 2rem;
 }
-.footer .container .top_footer .footer-content h5, .footer .container .bot_footer .footer-content h5 {
+.footer .top_footer .container .footer-content h5,
+.footer .bot_footer .container .footer-content h5 {
   font-weight: 600;
   font-size: 1rem;
 }
-.footer .container .top_footer .footer-content ul, .footer .container .bot_footer .footer-content ul {
+.footer .top_footer .container .footer-content ul,
+.footer .bot_footer .container .footer-content ul {
   padding: 0;
 }
-.footer .container .top_footer .footer-content ul li, .footer .container .bot_footer .footer-content ul li {
+.footer .top_footer .container .footer-content ul li,
+.footer .bot_footer .container .footer-content ul li {
   list-style: none;
 }
-.footer .container .top_footer .footer-content ul li a, .footer .container .bot_footer .footer-content ul li a {
+.footer .top_footer .container .footer-content ul li a,
+.footer .bot_footer .container .footer-content ul li a {
   font-size: 0.8rem;
   color: #000000;
 }
-.footer .container .top_footer .footer-content ul .footer-click-add, .footer .container .bot_footer .footer-content ul .footer-click-add {
+.footer .top_footer .container .footer-content ul .footer-click-add,
+.footer .bot_footer .container .footer-content ul .footer-click-add {
   color: #db742e;
 }
-.footer .container .top_footer .footer-content.mid, .footer .container .top_footer .footer-content.right, .footer .container .bot_footer .footer-content.mid, .footer .container .bot_footer .footer-content.right {
+.footer .top_footer .container .footer-content.mid, .footer .top_footer .container .footer-content.right,
+.footer .bot_footer .container .footer-content.mid,
+.footer .bot_footer .container .footer-content.right {
   padding-bottom: 0;
   border-left: 0.1rem solid #d3cdcd;
+}
+.footer .bot_footer {
+  background-color: #e6e6e6;
 }/*# sourceMappingURL=main.css.map */

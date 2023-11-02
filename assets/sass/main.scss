@@ -13,7 +13,9 @@ $color-white: #FFFFFF;
 
 a {
     text-decoration: none;
-};
+}
+
+;
 
 .header {
     .container-fluid {
@@ -21,13 +23,48 @@ a {
             color: $color-white;
         }
     }
-};
+}
+
+;
 
 .navbar {
     .container-fluid {
         .collapse {
-            a {
-                font-weight: 500;
+            ul {
+                li {
+                    padding: 0.45rem 0.8rem;
+                    a {
+                        padding: 0;
+                        padding-bottom: 0.3rem;
+                        font-weight: 500;
+                        position: relative;
+
+                        &:hover {
+                            color: $color-back;
+                            transition: color 0.5s;
+                        }
+
+                        ;
+
+                        &::after {
+                            content: '';
+                            width: 0;
+                            height: 0.1rem;
+                            background-color: $color-back;
+                            position: absolute;
+                            bottom: 1px;
+                            left: 0;
+                            transition: width 0.5s;
+                        }
+
+                        ;
+
+                        &:hover::after {
+                            width: 100%;
+                            transition: width 0.5s;
+                        }
+                    }
+                }
             }
         }
     }
@@ -35,29 +72,38 @@ a {
 
 .carousel {
     background-color: $color-white;
+
     .carousel-inner {
-        background-image: url(./../img/image\ 6.png); 
-        background-repeat: no-repeat; 
+        background-image: url(./../img/image\ 6.png);
+        background-repeat: no-repeat;
         background-size: cover;
+
         .container {
             position: relative;
+
             .carousel-caption {
                 color: $color-back;
                 position: absolute;
                 top: 25%;
                 left: 75%;
                 text-align: left;
+
                 h5 {
                     font-size: 2.3rem;
                     font-weight: 400;
-                };
+                }
+
+                ;
+
                 button {
                     padding: 12px 42px;
                 }
             }
         }
     }
-};
+}
+
+;
 
 .products {
     .container {
@@ -67,39 +113,64 @@ a {
             }
         }
     }
-};
+}
+
+;
 
 .footer {
-    .container {
-        .top_footer, .bot_footer {
-            display: flex;
-            padding: 2rem 0;
-            .footer-content {
-                width: 33%;
-                padding: 0 2rem;
-                h5 {
-                    font-weight: 600;
-                    font-size: 1rem;
-                };
-                ul {
-                    padding: 0;
-                    li {
-                        list-style: none;
-                        a {
-                            font-size: 0.8rem;
-                            color: $color-back;
-                        }
-                    };
-                    .footer-click-add {
-                        color: #db742e;
-                    };
-                };
-                &.mid, &.right {
-                    padding-bottom: 0;
-                    border-left: 0.1rem solid #d3cdcd;
+
+    .top_footer .container,
+    .bot_footer .container {
+        display: flex;
+        padding: 2rem 0;
+
+        .footer-content {
+            width: 33%;
+            padding: 0 2rem;
+
+            h5 {
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            ;
+
+            ul {
+                padding: 0;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        font-size: 0.8rem;
+                        color: $color-back;
+                    }
                 }
-            } 
+
+                ;
+
+                .footer-click-add {
+                    color: #db742e;
+                }
+
+                ;
+            }
+
+            ;
+
+            &.mid,
+            &.right {
+                padding-bottom: 0;
+                border-left: 0.1rem solid #d3cdcd;
+            }
         }
     }
-};
 
+    ;
+
+    & .bot_footer {
+        background-color: #e6e6e6
+    }
+}
+
+;
