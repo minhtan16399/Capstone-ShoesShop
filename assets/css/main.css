@@ -3,9 +3,77 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header .container-fluid a {
-  text-decoration: none;
-  color: #F6F6F6;
+  color: #FFFFFF;
+}
+
+.navbar .container-fluid .collapse a {
+  font-weight: 500;
+}
+
+.carousel {
+  background-color: #FFFFFF;
+}
+.carousel .carousel-inner {
+  background-image: url(./../img/image\ 6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel .carousel-inner .container {
+  position: relative;
+}
+.carousel .carousel-inner .container .carousel-caption {
+  color: #000000;
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  text-align: left;
+}
+.carousel .carousel-inner .container .carousel-caption h5 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.carousel .carousel-inner .container .carousel-caption button {
+  padding: 12px 42px;
+}
+
+.products .container .title h3 {
+  font-size: 2rem;
+}
+
+.footer .container .top_footer, .footer .container .bot_footer {
+  display: flex;
+  padding: 2rem 0;
+}
+.footer .container .top_footer .footer-content, .footer .container .bot_footer .footer-content {
+  width: 33%;
+  padding: 0 2rem;
+}
+.footer .container .top_footer .footer-content h5, .footer .container .bot_footer .footer-content h5 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.footer .container .top_footer .footer-content ul, .footer .container .bot_footer .footer-content ul {
+  padding: 0;
+}
+.footer .container .top_footer .footer-content ul li, .footer .container .bot_footer .footer-content ul li {
+  list-style: none;
+}
+.footer .container .top_footer .footer-content ul li a, .footer .container .bot_footer .footer-content ul li a {
+  font-size: 0.8rem;
+  color: #000000;
+}
+.footer .container .top_footer .footer-content ul .footer-click-add, .footer .container .bot_footer .footer-content ul .footer-click-add {
+  color: #db742e;
+}
+.footer .container .top_footer .footer-content.mid, .footer .container .top_footer .footer-content.right, .footer .container .bot_footer .footer-content.mid, .footer .container .bot_footer .footer-content.right {
+  padding-bottom: 0;
+  border-left: 0.1rem solid #d3cdcd;
 }/*# sourceMappingURL=main.css.map */

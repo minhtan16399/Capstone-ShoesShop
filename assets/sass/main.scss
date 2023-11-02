@@ -1,19 +1,105 @@
 $color-back: #000000;
 $color-purple: #9C27B0;
 $color-orange: #F8B653;
-$color-white: #F6F6F6;
+$color-white: #FFFFFF;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
+
+a {
+    text-decoration: none;
+};
+
 .header {
     .container-fluid {
+        a {
+            color: $color-white;
+        }
+    }
+};
+
+.navbar {
+    .container-fluid {
+        .collapse {
             a {
-                text-decoration: none;
-                color: $color-white;
+                font-weight: 500;
             }
+        }
     }
 }
+
+.carousel {
+    background-color: $color-white;
+    .carousel-inner {
+        background-image: url(./../img/image\ 6.png); 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        .container {
+            position: relative;
+            .carousel-caption {
+                color: $color-back;
+                position: absolute;
+                top: 25%;
+                left: 75%;
+                text-align: left;
+                h5 {
+                    font-size: 2.3rem;
+                    font-weight: 400;
+                };
+                button {
+                    padding: 12px 42px;
+                }
+            }
+        }
+    }
+};
+
+.products {
+    .container {
+        .title {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+};
+
+.footer {
+    .container {
+        .top_footer, .bot_footer {
+            display: flex;
+            padding: 2rem 0;
+            .footer-content {
+                width: 33%;
+                padding: 0 2rem;
+                h5 {
+                    font-weight: 600;
+                    font-size: 1rem;
+                };
+                ul {
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        a {
+                            font-size: 0.8rem;
+                            color: $color-back;
+                        }
+                    };
+                    .footer-click-add {
+                        color: #db742e;
+                    };
+                };
+                &.mid, &.right {
+                    padding-bottom: 0;
+                    border-left: 0.1rem solid #d3cdcd;
+                }
+            } 
+        }
+    }
+};
+
