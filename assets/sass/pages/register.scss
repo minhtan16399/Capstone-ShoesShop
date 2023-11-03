@@ -1,0 +1,42 @@
+.form_register {
+    max-width: 1280px;
+
+    .container {
+        .card {
+            .card-header {
+                h3 {
+                    font-weight: 500;
+                }
+            }
+
+            ;
+
+            .card-body {
+                .form-input {
+                    .form-control {
+                        margin: 1rem 0;
+                    }
+
+                    ;
+
+                    .form-radio {
+                        .radio {
+                            margin-left: 1rem;
+
+                            input {
+                                width: 1.2rem;
+                                height: 1.2rem;
+                                vertical-align: sub;
+                            }
+                        }
+                    }
+                }
+            };
+            .btn-submit {
+                button {
+                    padding: 0.5rem 2.5rem;
+                }
+            }
+        }
+    }
+}
