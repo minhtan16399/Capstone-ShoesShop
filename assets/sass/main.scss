@@ -1,5 +1,6 @@
 // pages
 @import './pages/register.scss';
+@import './pages/detail.scss';
 
 
 $color-back: #000000;
@@ -15,6 +16,8 @@ $color-white: #FFFFFF;
     font-size: 16px;
 }
 
+;
+
 a {
     text-decoration: none;
 }
@@ -22,6 +25,9 @@ a {
 ;
 
 .header {
+    max-width: 1366px;
+    margin: 0 auto;
+
     .container-fluid {
         a {
             color: $color-white;
@@ -32,11 +38,15 @@ a {
 ;
 
 .navbar {
+    max-width: 1366px;
+    margin: 0 auto;
+
     .container-fluid {
         .collapse {
             ul {
                 li {
                     padding: 0.45rem 0.8rem;
+
                     a {
                         padding: 0;
                         padding-bottom: 0.3rem;
@@ -78,6 +88,8 @@ a {
     background-color: $color-white;
 
     .carousel-inner {
+        max-width: 1366px;
+        margin: 0 auto;
         background-image: url(./../img/image\ 6.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -178,3 +190,4 @@ a {
 }
 
 ;
+

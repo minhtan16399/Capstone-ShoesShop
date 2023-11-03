@@ -1,0 +1,34 @@
+.products .container .products_show {
+  max-width: 1280px;
+}
+.products .container .products_show .content .item {
+  width: 27%;
+  margin: 3% 3%;
+}
+.products .container .products_show .content .item .card-img-top {
+  width: 85%;
+  margin: 0 auto;
+}
+.products .container .products_show .content .item .card-title {
+  width: 85%;
+  margin: 0.5rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.products .container .products_show .content .item .card_footer .button-buy {
+  border: none;
+  padding: 0.8rem 1rem;
+  background-color: #FFEB3B;
+}
+.products .container .products_show .content .item .card_footer .button-buy:hover {
+  background-color: #FF9800;
+  transition: 0.5s;
+}
+.products .container .products_show .content .item .card_footer .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: #dfdfdf;
+}/*# sourceMappingURL=detail.css.map */
