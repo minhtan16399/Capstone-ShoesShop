@@ -10,10 +10,19 @@
   <!-- Bootstrap CSS v5.3.2 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- axios cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+    integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- style css  -->
   <link rel="stylesheet" href="./../assets/css/main.css">
 </head>
@@ -75,11 +84,11 @@
               <h5>Gender</h5>
               <div class="form-radio d-flex flex-wrap mx-4">
                 <div class="radio">
-                  <input type="radio" name="gender" id="male">
+                  <input type="radio" name="gender" id="male" value="true">
                   <label for="Male">Male</label>
                 </div>
                 <div class="radio">
-                  <input type="radio" name="gender" id="female">
+                  <input type="radio" name="gender" id="female" value="false">
                   <label for="female">Female</label>
                 </div>
               </div>
@@ -148,10 +157,10 @@
       </div>
     </div>
   </footer>
-<!-- backtoTop  -->
-<a class="backtoTop cd-top text-replace js-cd-top" href="#">
-  <i class="fa fa-level-up"></i>
-</a>
+  <!-- backtoTop  -->
+  <a class="backtoTop cd-top text-replace js-cd-top" href="#">
+    <i class="fa fa-level-up"></i>
+  </a>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -167,6 +176,8 @@
   <script src="./../utils/util.js"></script>
 
   <script src="./../controllers/index.js"></script>
+  <script src="./../controllers/register.js"></script>
+
 </body>
 
 </html>
