@@ -118,19 +118,6 @@ a {
         }
     }
 }
-
-;
-
-.products {
-    .container {
-        .title {
-            h3 {
-                font-size: 2rem;
-            }
-        }
-    }
-}
-
 ;
 
 .footer {
@@ -190,4 +177,26 @@ a {
 }
 
 ;
+/* BACK TO TOP  */
+.backtoTop {
+    position: fixed;
+    z-index: 999;
+    right: 15px;
+    bottom: 85px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0d369f;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+  };
+  
+  .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  };
 

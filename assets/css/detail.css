@@ -1,3 +1,18 @@
+.product_detail .container .detail_left {
+  width: 35%;
+}
+.product_detail .container .detail_right .quanlity .number-quantility {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.product_detail .container .detail_right .quanlity .btn i {
+  font-size: 0.8rem;
+}
+
+.products .container .title h3 {
+  font-size: 2rem;
+}
 .products .container .products_show {
   max-width: 1280px;
 }
@@ -18,6 +33,7 @@
 }
 .products .container .products_show .content .item .card_footer .button-buy {
   border: none;
+  border-radius: 0;
   padding: 0.8rem 1rem;
   background-color: #FFEB3B;
 }

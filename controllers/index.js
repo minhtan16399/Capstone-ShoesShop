@@ -18,6 +18,8 @@ function showItem(product) {
         let img = item.image;
         let name = item.name;
         let price = item.price;
+        let id = item.id;
+        console.log(item.id);
         let createItem = document.createElement('div');
         createItem.className = 'item card';
         // tạo img cho item hiển thị trên web
@@ -32,8 +34,9 @@ function showItem(product) {
         let createDiv = document.createElement('div');
         createDiv.className = 'card_footer d-flex'
         // hiển thị btn mua sản phẩm
-        let createBtnBuy = document.createElement('button');
-        createBtnBuy.className = 'button-buy w-50';
+        let createBtnBuy = document.createElement('a');
+        createBtnBuy.href = './detail.html?productid='+ id;
+        createBtnBuy.className = 'button-buy btn w-50';
         createBtnBuy.innerText = 'Buy now';
         // hiển thị giá item
         let createPriceItem = document.createElement('span');
@@ -46,6 +49,5 @@ function showItem(product) {
         createItem.appendChild(createDiv);
         createDiv.appendChild(createBtnBuy);
         createDiv.appendChild(createPriceItem);
-        
     };
 };
