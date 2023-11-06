@@ -1,12 +1,12 @@
 .product_detail .container .detail_left {
   width: 35%;
 }
-.product_detail .container .detail_right .quanlity .number-quantility {
+.product_detail .container .detail_right .quantity .number-quantity {
   margin-bottom: 0;
   display: flex;
   align-items: center;
 }
-.product_detail .container .detail_right .quanlity .btn i {
+.product_detail .container .detail_right .quantity .btn i {
   font-size: 0.8rem;
 }
 

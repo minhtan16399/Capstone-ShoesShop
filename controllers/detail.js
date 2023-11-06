@@ -49,9 +49,9 @@ function productDetail(img, name, desc, size, price) {
       <div class="my-4">
         <span class="total-price alert alert-light text-black">$${price}</span>
       </div>
-      <div class="quanlity d-inline d-flex my-4">
+      <div class="quantity d-inline d-flex my-4">
         <button id="btnMinus" class="btn text-black btn-outline-secondary" onclick="minusNumber()"><i class="fa-solid fa-minus"></i></button>
-        <span class="number-quantility alert alert-light text-black py-0">1</span>
+        <span class="number-quantity alert alert-light text-black py-0">1</span>
         <button id="btnPlus" class="btn text-black btn-outline-secondary" onclick="plusNumber()"><i class="fa-solid fa-plus"></i></button>
       </div>
       <button class="btn btn-success px-4 py-2">Add to cart</button>
@@ -77,7 +77,7 @@ function plusNumber() {
     let plus = 1;
     quantility.push(plus);
     base = quantility.length;
-    document.querySelector('.number-quantility').innerHTML = base;
+    document.querySelector('.number-quantity').innerHTML = base;
     console.log(quantility);
 };
 function minusNumber() {
@@ -87,6 +87,6 @@ function minusNumber() {
         quantility.pop();
         base = quantility.length;
     }
-    document.querySelector('.number-quantility').innerHTML = base;
+    document.querySelector('.number-quantity').innerHTML = base;
 };
 

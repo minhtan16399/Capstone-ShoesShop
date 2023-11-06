@@ -67,25 +67,30 @@
   </nav>
   <section class="form_register bg-body mx-auto">
     <div class="container">
-      <form class="card my-3">
+      <div class="form_content card my-3">
         <div class="card-header text-center py-3">
           <h3 class="card-title">Register</h3>
         </div>
-        <div class="card-body d-flex">
-          <div class="form-input w-50 mx-3">
-            <input type="text" placeholder="Email" class="form-control">
-            <input type="password" placeholder="Password" class="form-control">
-            <input type="password" placeholder="Password confirm" class="form-control">
+        <div class="card-body d-flex flex-wrap flex-sm-nowrap">
+          <div class="form-input w-100 mx-3">
+            <input id="email" type="text" placeholder="Email" class="form-control" autocomplete="email">
+            <span class="sp-thongbao" id="tbEmail"></span>
+            <input id="password" type="password" placeholder="Password" class="form-control">
+            <span class="sp-thongbao" id="tbPassword"></span>
+            <input id="confirmPassword" type="password" placeholder="Password confirm" class="form-control">
+            <span class="sp-thongbao" id="tbTen"></span>
           </div>
-          <div class="form-input w-50 mx-3">
-            <input type="text" placeholder="Name" class="form-control">
-            <input type="text" placeholder="Phone number" class="form-control">
-            <div class="d-inline d-flex">
+          <div class="form-input w-100 mx-3">
+            <input id="name" type="text" placeholder="Name" class="form-control" autocomplete="name">
+            <span class="sp-thongbao" id="tbName"></span>
+            <input id="phoneNumber" type="text" placeholder="Phone number" class="form-control">
+            <span class="sp-thongbao" id="tbPhone"></span>
+            <div id="gender" class="d-inline d-flex">
               <h5>Gender</h5>
               <div class="form-radio d-flex flex-wrap mx-4">
                 <div class="radio">
                   <input type="radio" name="gender" id="male" value="true">
-                  <label for="Male">Male</label>
+                  <label for="male">Male</label>
                 </div>
                 <div class="radio">
                   <input type="radio" name="gender" id="female" value="false">
@@ -96,9 +101,9 @@
           </div>
         </div>
         <div class="py-3 text-center btn-submit">
-          <button type="submit" class="btn btn-success mb-3">Submit</button>
+          <button type="submit" class="btn btn-success mb-3" onclick="inputUser()">Submit</button>
         </div>
-      </form>
+      </div>
     </div>
   </section>
   <footer class="footer">
@@ -171,11 +176,13 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+
   <!-- scroll to top  -->
   <script src="./../utils/main.js"></script>
   <script src="./../utils/util.js"></script>
 
-  <script src="./../controllers/index.js"></script>
+  <!-- <script src="./../controllers/index.js"></script> -->
+  <script src="./../utils/method.js"></script>
   <script src="./../controllers/register.js"></script>
 
 </body>
