@@ -45,7 +45,9 @@ function productDetail(img, name, desc, size, price) {
       <h3 class="detail_right_title">${name}</h3>
       <p class="descript">${desc}</p>
       <h5 class="size">Choose Size</h5>
-      <div class="size_content mt-2"></div>
+      <div class="mt-2">
+      <ul class="size_content"></ul>
+      </div>
       <div class="my-4">
         <span class="total-price alert alert-light text-black">$${price}</span>
       </div>
@@ -64,28 +66,45 @@ function productDetail(img, name, desc, size, price) {
 function showItemSize(size) {
     for (item of size) {
         let createBtnSize = document.querySelector('.size_content');
-        let createBtn = document.createElement('button');
-        createBtn.className = 'btn btn-outline-secondary me-2 my-2';
+        let createBtn = document.createElement('a');
+        createBtn.className = 'button-size btn btn-outline-secondary me-2 my-2 selected';
         createBtn.innerText = item;
         createBtnSize.appendChild(createBtn);
-    }
+        let button = document.getElementsByClassName('button-size');
+
+        let addSelectClass = () => {
+            removeSelectClass();
+            button.classList.add('selected');
+        };
+
+        let removeSelectClass = () => {
+            for (let i = 0; i < button.length; i++) {
+                button[i].classList.remove('selected')
+            }
+        };
+
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener("click", addSelectClass);
+        };
+    };
 };
 
-let quantility = [1];
+let quantity = [1];
 let base = '';
 function plusNumber() {
     let plus = 1;
-    quantility.push(plus);
-    base = quantility.length;
+    quantity.push(plus);
+    base = quantity.length;
     document.querySelector('.number-quantity').innerHTML = base;
-    console.log(quantility);
+    console.log(quantity);
 };
+
 function minusNumber() {
-    if (quantility.length == 1) {
-        quantility.length
+    if (quantity.length == 1) {
+        quantity.length
     } else {
-        quantility.pop();
-        base = quantility.length;
+        quantity.pop();
+        base = quantity.length;
     }
     document.querySelector('.number-quantity').innerHTML = base;
 };
