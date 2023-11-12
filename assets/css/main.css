@@ -95,6 +95,11 @@ a {
 .header .container-fluid a {
   color: #FFFFFF;
 }
+.header .container-fluid .quatity-count {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 0 0.3rem;
+}
 
 .navbar {
   max-width: 1366px;

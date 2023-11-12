@@ -6,8 +6,9 @@ async function onloadData() {
             method: 'GET',
         });
         console.log(response);
-        console.log(response.data.content);
+        // console.log(response.data.content);
         showItem(response.data.content);
+        getStorage();
     } catch (error) {
         console.log(error);
     };
@@ -19,7 +20,7 @@ function showItem(product) {
         let name = item.name;
         let price = item.price;
         let id = item.id;
-        console.log(item.id);
+        // console.log(item.id);
         let createItem = document.createElement('div');
         createItem.className = 'item card';
         // tạo img cho item hiển thị trên web

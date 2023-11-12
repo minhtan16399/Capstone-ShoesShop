@@ -1,3 +1,6 @@
+window.onload = function () {
+    getStorage();
+};
 // valid họ tên 
 document.querySelector('#name').onchange = function () {
     let inputVal = document.getElementById('name').value;
