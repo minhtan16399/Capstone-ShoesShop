@@ -8,7 +8,7 @@ async function onloadData() {
         console.log(response);
         // console.log(response.data.content);
         showItem(response.data.content);
-        getStorage();
+        refeshItemCart();
     } catch (error) {
         console.log(error);
     };

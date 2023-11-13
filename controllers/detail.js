@@ -5,7 +5,7 @@ window.onload = function (e) {
     console.log('params', myParam);
     onloadData();
     onloadDataDetail(myParam);
-    getStorage();
+    refeshItemCart();
 };
 
 async function onloadDataDetail(myParam) {
@@ -31,10 +31,10 @@ function logItem(item) {
     let sizes = item.size;
     console.log(item.id);
     console.log(sizes);
-    productDetail(img, name, desc, sizes, price);
+    productDetail(id, img, name, desc, sizes, price);
 };
 
-function productDetail(img, name, desc, size, price) {
+function productDetail(id, img, name, desc, size, price) {
     let domCard = document.createElement('div');
     domCard.className = 'container';
     domCard.innerHTML =
@@ -66,7 +66,7 @@ function productDetail(img, name, desc, size, price) {
     document.querySelector('.product_detail').appendChild(domCard);
     showItemSize(size);
     document.querySelector('#addCart').addEventListener('click', (e) => {
-        addItemToCart(price, size);
+        addItemToCart(id, name, price, size, img);
     })
     // addItemToCart(price, size);
 };
@@ -108,26 +108,34 @@ function minusNumber() {
     document.querySelector('.number-quantity').innerHTML = base;
 };
 
-function addItemToCart(price, size) {
-    let cartItem = new detailItem;
+function addItemToCart(id, name, price, size, img) {
     let number = quantity.length;
     let checkSize = chooseSize(size);
+    let cartItem = {
+        id: id,
+        name: name,
+        price: price,
+        size: checkSize,
+        image: img,
+        quantity: number,
+    };
     if (checkSize === '') {
         document.querySelector('#tbSize').innerHTML = 'Vui long chon Size';
     } else {
-        // document.querySelector('#tbSize').style.display = 'none';
-        document.querySelector('#tbSize').innerHTML = '';
-        cartItem.name = document.querySelector('.detail_right_title').textContent;
-        cartItem.quantity = number;
-        cartItem.size = checkSize;
-        cartItem.price = price;
-        cartItem.totalPrice = price * number;
-        cart.push(cartItem);
-        // function saveStorage() {
-        saveStorage();
-        // console.log(cartItem);
-        console.log(cart);
-        getStorage();
+
+        let listCart = getStorage()?getStorage():[];
+        
+        console.log(listCart);
+        let currentItem = listCart?.find(item => item.id === id);
+        console.log('id sp', currentItem);
+        if (!currentItem) {
+            listCart.push(cartItem);
+            console.log(listCart);
+        } else {
+            currentItem.quantity += number;
+        };
+        saveStorage(listCart);
+        refeshItemCart();
     };
 };
 

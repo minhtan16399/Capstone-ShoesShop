@@ -1,5 +1,5 @@
 window.onload = function () {
-    getStorage();
+    refeshItemCart();
 };
 // valid họ tên 
 document.querySelector('#name').onchange = function () {

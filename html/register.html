@@ -32,9 +32,30 @@
     <div class="container-fluid d-flex justify-content-between">
       <img src="./../assets/img/image 3.png" alt="">
       <div class="d-flex">
-        <div>
-          <a href="#cart"><img class="" src="../assets/img/image 8.png" alt=""></a>
+        <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a href="#cart"><img class="modal-body" src="../assets/img/image 8.png" alt="">
+          </a>
           <span class="quatity-count me-3">0</span>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">My Cart</h1>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              </div>
+              <div class="modal-body">
+                <ul class="modal-contents">
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="btnDeleteAllCart" type="button" class="btn btn-danger">Clear all</button>
+                <a href="#ViewAllCart" type="button" class="btn btn-success">View all</a>
+              </div>
+            </div>
+          </div>
         </div>
         <a class="me-3" href="#">Login</a>
         <a class="me-3" href="./register.html">Register</a>

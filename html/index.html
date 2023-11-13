@@ -46,10 +46,13 @@
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
               </div>
               <div class="modal-body">
+                <ul class="modal-contents">
+                </ul>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button id="btnDeleteAllCart" type="button" class="btn btn-danger" onclick="clearItemCart()">Clear all</button>
+                <a href="#ViewAllCart" type="button" class="btn btn-success">View all</a>
               </div>
             </div>
           </div>
