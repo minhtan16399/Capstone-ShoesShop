@@ -5,4 +5,5 @@ Options that you can use:
 - Add and clear product in cart
 - Input your information then post up API to register an account
 - Click button to change light-theme and dark-theme
-  Thank you !!!
+  
+ !!! Thank you !!!
