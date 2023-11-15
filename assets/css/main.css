@@ -247,4 +247,8 @@ a {
 .darkmode--activated .backtoTop {
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.darkmode-toggle {
+  z-index: 999;
 }/*# sourceMappingURL=main.css.map */
