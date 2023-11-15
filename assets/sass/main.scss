@@ -14,6 +14,8 @@ $color-white: #FFFFFF;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    // background-color: $color-white;
+    // color: $color-back;
 }
 
 ;
@@ -27,24 +29,29 @@ a {
 .header {
     max-width: 1366px;
     margin: 0 auto;
-
+    background-color: $color-back;
+    isolation: isolate;
     .container-fluid {
-        a {
-            color: $color-white;
-        }
-        .quatity-count {
-            background-color: $color-white;
-            border-radius: 50%;
-            padding: 0 0.3rem;
-        }
+        background-color: $color-back;
+        .d-flex {
+            a {
+                color: $color-white;
+            }
+            .quatity-count {
+                background-color: $color-white;
+                border-radius: 50%;
+                padding: 0 0.3rem;
+            }
+        } 
     }
 }
 
 ;
 
-.navbar {
+.navbar-expand-lg {
     max-width: 1366px;
     margin: 0 auto;
+    background-color: $color-white;
 
     .container-fluid {
         .collapse {
@@ -84,7 +91,7 @@ a {
                         }
                     }
                 }
-            }
+            };
         }
     }
 }
@@ -191,8 +198,8 @@ a {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background-color: #0d369f;
-    color: white;
+    background-color: $color-back;
+    color: $color-white;
     font-size: 18px;
     text-align: center;
     border-radius: 3px;
@@ -204,4 +211,8 @@ a {
     visibility: visible;
     opacity: 1;
   };
-
+.darkmode--activated .backtoTop {
+    background-color: $color-white;
+    color: $color-back;
+  };
+  

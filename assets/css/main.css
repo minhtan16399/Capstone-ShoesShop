@@ -37,6 +37,9 @@
   font-size: 0.8rem;
 }
 
+.products {
+  padding-top: 3rem;
+}
 .products .container .title h3 {
   font-size: 2rem;
 }
@@ -91,34 +94,40 @@ a {
 .header {
   max-width: 1366px;
   margin: 0 auto;
+  background-color: #000000;
+  isolation: isolate;
 }
-.header .container-fluid a {
+.header .container-fluid {
+  background-color: #000000;
+}
+.header .container-fluid .d-flex a {
   color: #FFFFFF;
 }
-.header .container-fluid .quatity-count {
+.header .container-fluid .d-flex .quatity-count {
   background-color: #FFFFFF;
   border-radius: 50%;
   padding: 0 0.3rem;
 }
 
-.navbar {
+.navbar-expand-lg {
   max-width: 1366px;
   margin: 0 auto;
+  background-color: #FFFFFF;
 }
-.navbar .container-fluid .collapse ul li {
+.navbar-expand-lg .container-fluid .collapse ul li {
   padding: 0.45rem 0.8rem;
 }
-.navbar .container-fluid .collapse ul li a {
+.navbar-expand-lg .container-fluid .collapse ul li a {
   padding: 0;
   padding-bottom: 0.3rem;
   font-weight: 500;
   position: relative;
 }
-.navbar .container-fluid .collapse ul li a:hover {
+.navbar-expand-lg .container-fluid .collapse ul li a:hover {
   color: #000000;
   transition: color 0.5s;
 }
-.navbar .container-fluid .collapse ul li a::after {
+.navbar-expand-lg .container-fluid .collapse ul li a::after {
   content: "";
   width: 0;
   height: 0.1rem;
@@ -128,7 +137,7 @@ a {
   left: 0;
   transition: width 0.5s;
 }
-.navbar .container-fluid .collapse ul li a:hover::after {
+.navbar-expand-lg .container-fluid .collapse ul li a:hover::after {
   width: 100%;
   transition: width 0.5s;
 }
@@ -212,8 +221,8 @@ a {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background-color: #0d369f;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
   font-size: 18px;
   text-align: center;
   border-radius: 3px;
@@ -224,4 +233,9 @@ a {
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
+}
+
+.darkmode--activated .backtoTop {
+  background-color: #FFFFFF;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
