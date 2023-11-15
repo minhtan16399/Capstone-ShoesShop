@@ -1,7 +1,7 @@
 .product_detail {
     .container {
         .detail_left {
-            width: 35%;
+            // width: 100%;
         }
 
         ;
@@ -29,7 +29,8 @@
 ;
 
 .products {
-    padding-top: 3rem ;
+    padding-top: 1rem;
+
     .container {
         .title {
             h3 {
@@ -46,8 +47,8 @@
 
             .content {
                 .item {
-                    width: 27%;
-                    margin: 3% 3%;
+                    // width: 27%;
+                    // margin: 3% 3%;
 
                     .card-img-top {
                         width: 85%;
@@ -72,6 +73,9 @@
                             border-radius: 0;
                             padding: 0.8rem 1rem;
                             background-color: #FFEB3B;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
 
                             &:hover {
                                 background-color: #FF9800;

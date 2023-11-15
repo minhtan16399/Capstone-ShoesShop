@@ -38,13 +38,13 @@ function productDetail(id, img, name, desc, size, price) {
     let domCard = document.createElement('div');
     domCard.className = 'container';
     domCard.innerHTML =
-        `<div class="d-flex flex-wrap">
-    <div class="detail_left mx-4 mb-3">
+        `<div class="row justify-content-around">
+    <div class="detail_left mb-4 col-md-6">
       <div class="card">
         <img class="card-img-top w-100" src="${img}" alt="">
       </div>
     </div>
-    <div class="detail_right mx-4 w-50">
+    <div class="detail_right col-md-6">
       <h3 class="detail_right_title">${name}</h3>
       <p class="descript">${desc}</p>
       <h5 class="size">Choose Size</h5>

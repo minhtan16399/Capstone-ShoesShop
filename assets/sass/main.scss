@@ -32,17 +32,45 @@ a {
     background-color: $color-back;
     isolation: isolate;
     .container-fluid {
-        background-color: $color-back;
         .d-flex {
             a {
                 color: $color-white;
             }
+
             .quatity-count {
                 background-color: $color-white;
                 border-radius: 50%;
                 padding: 0 0.3rem;
             }
-        } 
+
+            ;
+        }
+    }
+
+    ;
+}
+
+;
+
+.darkmode--activated .header {
+    background-color: $color-back !important;
+
+    .container-fluid {
+        background-color: $color-back;
+
+        .d-flex {
+            a {
+                color: $color-white;
+            }
+
+            .quatity-count {
+                background-color: $color-white;
+                border-radius: 50%;
+                padding: 0 0.3rem;
+            }
+        }
+
+        ;
     }
 }
 
@@ -91,7 +119,9 @@ a {
                         }
                     }
                 }
-            };
+            }
+
+            ;
         }
     }
 }
@@ -130,18 +160,20 @@ a {
         }
     }
 }
+
 ;
 
 .footer {
 
     .top_footer .container,
     .bot_footer .container {
-        display: flex;
+        // display: flex;
         padding: 2rem 0;
 
         .footer-content {
-            width: 33%;
+            // width: 33%;
             padding: 0 2rem;
+            margin: 0.5rem 0;
 
             h5 {
                 font-weight: 600;
@@ -156,7 +188,8 @@ a {
                 li {
                     list-style: none;
 
-                    a {
+                    a,
+                    p {
                         font-size: 0.8rem;
                         color: $color-back;
                     }
@@ -189,6 +222,7 @@ a {
 }
 
 ;
+
 /* BACK TO TOP  */
 .backtoTop {
     position: fixed;
@@ -205,14 +239,20 @@ a {
     border-radius: 3px;
     visibility: hidden;
     opacity: 0;
-  };
-  
-  .cd-top--is-visible {
+}
+
+;
+
+.cd-top--is-visible {
     visibility: visible;
     opacity: 1;
-  };
+}
+
+;
+
 .darkmode--activated .backtoTop {
     background-color: $color-white;
     color: $color-back;
-  };
-  
+}
+
+;

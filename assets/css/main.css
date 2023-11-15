@@ -25,9 +25,6 @@
   padding: 0.5rem 2.5rem;
 }
 
-.product_detail .container .detail_left {
-  width: 35%;
-}
 .product_detail .container .detail_right .quantity .number-quantity {
   margin-bottom: 0;
   display: flex;
@@ -38,17 +35,13 @@
 }
 
 .products {
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 .products .container .title h3 {
   font-size: 2rem;
 }
 .products .container .products_show {
   max-width: 1280px;
-}
-.products .container .products_show .content .item {
-  width: 27%;
-  margin: 3% 3%;
 }
 .products .container .products_show .content .item .card-img-top {
   width: 85%;
@@ -66,6 +59,9 @@
   border-radius: 0;
   padding: 0.8rem 1rem;
   background-color: #FFEB3B;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .products .container .products_show .content .item .card_footer .button-buy:hover {
   background-color: #FF9800;
@@ -97,13 +93,25 @@ a {
   background-color: #000000;
   isolation: isolate;
 }
-.header .container-fluid {
-  background-color: #000000;
-}
 .header .container-fluid .d-flex a {
   color: #FFFFFF;
 }
 .header .container-fluid .d-flex .quatity-count {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 0 0.3rem;
+}
+
+.darkmode--activated .header {
+  background-color: #000000 !important;
+}
+.darkmode--activated .header .container-fluid {
+  background-color: #000000;
+}
+.darkmode--activated .header .container-fluid .d-flex a {
+  color: #FFFFFF;
+}
+.darkmode--activated .header .container-fluid .d-flex .quatity-count {
   background-color: #FFFFFF;
   border-radius: 50%;
   padding: 0 0.3rem;
@@ -172,13 +180,12 @@ a {
 
 .footer .top_footer .container,
 .footer .bot_footer .container {
-  display: flex;
   padding: 2rem 0;
 }
 .footer .top_footer .container .footer-content,
 .footer .bot_footer .container .footer-content {
-  width: 33%;
   padding: 0 2rem;
+  margin: 0.5rem 0;
 }
 .footer .top_footer .container .footer-content h5,
 .footer .bot_footer .container .footer-content h5 {
@@ -194,7 +201,9 @@ a {
   list-style: none;
 }
 .footer .top_footer .container .footer-content ul li a,
-.footer .bot_footer .container .footer-content ul li a {
+.footer .top_footer .container .footer-content ul li p,
+.footer .bot_footer .container .footer-content ul li a,
+.footer .bot_footer .container .footer-content ul li p {
   font-size: 0.8rem;
   color: #000000;
 }

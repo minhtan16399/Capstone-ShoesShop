@@ -22,7 +22,7 @@ function showItem(product) {
         let id = item.id;
         // console.log(item.id);
         let createItem = document.createElement('div');
-        createItem.className = 'item card';
+        createItem.className = 'item card mx-1 mb-4 mb-md-5 col-md-3 col-5';
         // tạo img cho item hiển thị trên web
         let createImgItem = document.createElement('img');
         createImgItem.className = 'card-img-top';
@@ -33,15 +33,15 @@ function showItem(product) {
         createNameItem.innerHTML = name;
         // tạo thẻ div chứa btn và price
         let createDiv = document.createElement('div');
-        createDiv.className = 'card_footer d-flex'
+        createDiv.className = 'card_footer row'
         // hiển thị btn mua sản phẩm
         let createBtnBuy = document.createElement('a');
         createBtnBuy.href = './detail.html?productid='+ id;
-        createBtnBuy.className = 'button-buy btn w-50';
+        createBtnBuy.className = 'button-buy btn col-6';
         createBtnBuy.innerText = 'Buy now';
         // hiển thị giá item
         let createPriceItem = document.createElement('span');
-        createPriceItem.className = 'price w-50';
+        createPriceItem.className = 'price col-6';
         createPriceItem.innerHTML = '$' + price;
         // hiển thị sản phẩm ở trong div content của mục sản phẩm
         document.querySelector('.content').appendChild(createItem);
